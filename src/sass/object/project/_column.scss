@@ -1,0 +1,44 @@
+.column__title {
+  margin-bottom: 35px;
+}
+
+.column__txt {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.column__box {
+  background-color: $conversionColor;
+  padding: 50px 0 0;
+
+  @include media_query_tablet {
+    padding: 50px 0 25px;
+  }
+
+  &__inner {
+    float: right;
+    width: 60%;
+    margin: 20px 0 0;
+    word-break: break-all;
+
+    @include media_query_tablet {
+      float: none;
+      width: $basicWidth;
+      margin: 20px auto 0;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.iphone__img {
+  width: 40%;
+  display: block;
+  float: left;
+  
+  @include media_query_tablet {
+    width: $basicWidth;
+    float: none;
+    margin: 0 auto 20px;
+  }
+}

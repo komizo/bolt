@@ -1,0 +1,27 @@
+.intro {
+  padding: 250px 0;
+
+  @include media_query_mobile {
+    padding: 160px 0 130px;
+  }
+
+  &__txt {
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+
+  &__box {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $conversionColor;
+    
+    @include media_query_mobile {
+      font-size: 80px;
+    }
+  }
+}

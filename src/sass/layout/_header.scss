@@ -1,0 +1,103 @@
+header {
+  width: $basicWidth;
+  height: 100px;
+  background-color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+.bolt__icon {
+  color: #777;
+  float: left;
+  @include media_query_mobile {
+    margin-left: 15px;
+  }
+}
+
+.contact {
+  float: right;
+  display: block;
+  padding: 14px 12px;
+  margin: 15px 0;
+  background-color: $conversionColor;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.sp__menu__box {
+  display: none;
+}
+
+@include media_query_mobile {
+  .pc__menu {
+    display: none;
+  }
+
+  .sp__menutoggle {
+    display: block;
+    float: right;
+    margin-right: 15px;
+
+    &__box {
+      position: relative;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 15px 0;
+      cursor: pointer;
+    }
+
+    & span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 70%;
+      background-color: #ddd;
+      left: 0;
+      margin: 15%;
+    }
+  }
+
+  .toggle__top {
+    top: 0;
+  }
+
+  .toggle__middle {
+    top: 11px;
+  }
+
+  .toggle__bottom {
+    top: 22px;
+  }
+
+  header.open .sp__menu {
+    position: absolute;
+    top: 85px;
+    display: block;
+    z-index: 2;
+    width: $basicWidth;
+    background-color: #fff;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+
+    &__box {
+      display: block;
+    }
+
+    &__item {
+      background-color: $conversionColor;
+      padding: 15px;
+    }
+
+    &__link {
+      color: #fff;
+    }
+  }
+}

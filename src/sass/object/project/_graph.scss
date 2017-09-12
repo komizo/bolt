@@ -1,0 +1,28 @@
+.graph__box {
+  background-color: $backgroundColorDarkgray;
+  padding: 70px 0 100px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: inline-block;
+    margin-right: 180px;
+    font-size: 16px;
+    
+    @include media_query_tablet {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 88px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.graph__img {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,33 @@
+.btn {
+  width: 30%;
+  float: right;
+
+  @include media_query_tablet {
+    width: $basicWidth;
+    float: none;
+  }
+
+  @include media_query_mobile {
+    float: none;
+  }
+
+  &__link {
+    padding: 14px 20px;
+    background-color: $conversionColor;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    
+    @include media_query_tablet {
+      float: none;
+    }
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+
+  &__txt {
+    display: inline-block;
+  }
+}

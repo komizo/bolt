@@ -1,0 +1,62 @@
+.cf::after,
+.cf::before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.txt__raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.txt__lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.box {
+  margin: 0 auto;
+  max-width: $maxWidth;
+  text-align: center;
+  box-sizing: border-box;
+
+  @include media_query_tablet {
+    width: $basicWidth;
+  }
+}
+
+.inner {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  
+  @include media_query_mobile {
+    padding: 0;
+  }
+}
+
+.evenbox {
+  background-color: $backgroundColorGray;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.txt__wh {
+  color: #fff;
+}
+
+.txt_20 {
+  font-size: 20px;
+  line-height: 30px;
+}
